@@ -1,0 +1,48 @@
+<h1>
+  <span style="color: chartreuse;font-weight: bold;">UPPERCASE</span><br>
+  {{ title | uppercase}} <br>
+</h1>
+<h2>
+  <span style="color: rgb(255, 0, 140);font-weight: bold;">LOWERCASE</span><br>
+  {{ title | lowercase }} <br>
+</h2>
+<h1>
+  <span style="color: rgb(68, 0, 255);font-weight: bold;">UPPERCASE</span><br>
+  {{ name | uppercase}} <br>
+</h1>
+<h2>
+  <span style="color: rgb(255, 0, 0);font-weight: bold;">LOWERCASE</span><br>
+  {{ name | lowercase }} <br>
+</h2>
+
+<h1><span style="color: rgb(0, 255, 64);font-weight: bold;">Title Case</span><br>
+  {{ name | titlecase }}</h1>
+<h1>{{ msg | titlecase }}</h1>
+
+<h1><span style="color: rgb(255, 102, 0);font-weight: bold;">Slice</span><br>
+  {{ fullName | slice:3:9 }}</h1>
+
+<h1><span style="color: rgb(255, 102, 0);font-weight: bold;">DatePipes</span><br>
+  {{ birthday | date: 'fullDate' }}</h1>
+<h1>{{ birthday | date: 'fullDate' | uppercase }}</h1>
+
+<h1> <span style="color: chocolate;">DecimalPipe :</span> <br>
+  {{count| number}}
+</h1>
+<h2>
+  {{count| number: '3.1-4'}}
+</h2>
+
+<h1>
+  {{count | number: '3.1-4' : 'fr'}}
+</h1>
+
+<div>
+  <h2><span style="color: rgb(210, 30, 210);">PercentPipe :</span> <br>
+    {{ count | percent}}
+  </h2>
+  <h2>
+    {{ count | percent : '4.2-5'}}
+  </h2><br>
+  
+</div>
